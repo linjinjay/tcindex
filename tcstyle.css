@@ -1,0 +1,29 @@
+﻿.firstHeader{
+	color: blue;
+	background-color:rgb(50, 100, 220)
+}
+
+.mainTable{
+	background-color:gray;
+	border-width: 10px;
+	border-style:solid;
+	padding: 5px;
+}
+
+.empInfo{
+	border: none;
+	text-align: left;
+}
+
+th {
+  border: 1px solid;
+  width: 200px;
+  }
+  
+td {
+  border: 1px dotted;
+  }
+  
+.firstTable {
+	background-color: #D7AC00;
+}

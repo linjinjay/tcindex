@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./tcstyle.css" />
+    <title>Timecard</title>
+    <style type="text/css">
+	</style>
+  </head>
+  <body>
+    <div class="firstHeader">
+      <h1 style="color: black;">Timecard</h1>
+      <p>View option</p> <!--List of view options Monthly, weekly, daily, or vertical list view-->
+    </div>  
+    <table class="firstTable">   
+      <tr>       
+        <th class="empInfo">Name: </th>
+	    <th class="empInfo">ID: </th>
+	    <th class="empInfo">Job Title</th>
+	    <th class="empInfo">Vacation hours</th>
+	    <th class="empInfo">Sick hours</th>      
+      </tr> 
+    </table>
+    <pre>Paycode Legend: 1-Reg  2-OT  3-Sick  4-Vac</pre>
+    <button style="float: right;">Submit</button>
+    <button style="float: right;">Save</button>
+    <br>
+    <br>
+    <table align="right">
+      <tr>  
+      <td style="color: blue;">Previous</td><td>mm/dd/yyyy to mm/dd/yyyy</td><td style="color: blue;">Next</td>
+      </tr>
+    </table>
+    <br>
+    <br>
+    <button type="button" onclick="testPunch()">Punch</button>
+    <br>
+    <br>
+    
+    <div class="mainTable">
+      <table>      
+        <tr>
+	      <th>Date</th>
+	      <th id="monDate">Mon mm/dd</th>
+	      <th>Tue mm/dd</th>
+	      <th>Wed mm/dd</th>
+	      <th>Thur mm/dd</th>
+	      <th>Fri mm/dd</th>
+	      <th>Sat mm/dd</th>
+	      <th>Sun mm/dd</th>
+	      <th>Week Total</th>
+	      <th>Notes</th>  
+        </tr>
+        <tr>
+          <th>Scheduled Time</th>
+          <th>9:00am - 6:00pm</th>
+          <th>9:00am - 6:00pm</th>
+          <th>9:00am - 6:00pm</th>
+          <th>9:00am - 6:00pm</th>
+          <th>9:00am - 6:00pm</th>
+          <th>9:00am - 6:00pm</th>
+          <th>9:00am - 6:00pm</th>
+          <th></th>
+          <th></th>
+        </tr>
+        <tr>
+          <td>Punches</td>
+          <td id="timePunch"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Day Total</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Pay Code</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>        
+      </table>
+    </div>
+    <br>
+    <button style="float: right;">Submit</button>
+    <button style="float: right;">Save</button>
+
+    <script src="tcapp.js"></script>
+  </body>
+  
+</html>
