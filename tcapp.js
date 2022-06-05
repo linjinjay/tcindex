@@ -6,7 +6,16 @@ function testPunch() {
 }
   
 function dateMon(){
-  document.getElementById("monDate").innerHTML = new Date();
+  var monDay = new Date();
+  var monMonth = monDay.getMonth() + 1;
+  var monDated = monDay.getDate();
+  document.getElementById("monDate").innerHTML = "Mon " + monMonth + "/" + monDated;
+
 
 }
 dateMon()
+
+function currentTime(){
+  document.getElementById('currentTime').innerHTML = new Date();
+}
+currentTime()
