@@ -19,3 +19,11 @@ function currentTime(){
   document.getElementById('currentTime').innerHTML = new Date();
 }
 currentTime()
+
+const dateTue = () => {
+  var tueDay = new Date();
+  var tueMonth = tueDay.getMonth() + 1;
+  var tueDated = tueDay.getDate();
+  document.getElementById('tueDate').innerHTML = "Tue" + tueMonth + "/" + tueDated;
+}
+dateTue()
