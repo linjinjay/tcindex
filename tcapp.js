@@ -1,8 +1,28 @@
 function testPunch() {
-  var a = "a";
   var d = new Date();
   var n = d.toLocaleTimeString() + "<br>";
-  document.getElementById('timePunch').innerHTML += n;
+  var dayofWeek = d.getDay();
+  if (dayofWeek == 1) {
+    document.getElementById("timePunchMon").innerHTML += n;
+  }
+  if (dayofWeek == 2) {
+    document.getElementById("timePunchTue").innerHTML += n;
+  }
+  if (dayofWeek == 3) {
+    document.getElementById("timePunchWed").innerHTML += n;
+  }
+  if (dayofWeek == 4) {
+    document.getElementById("timePunchThur").innerHTML += n;
+  }
+  if (dayofWeek == 5) {
+    document.getElementById("timePunchFri").innerHTML += n;
+  }
+  if (dayofWeek == 6) {
+    document.getElementById("timePunchSat").innerHTML += n;
+  }
+  if (new Date().getDay() == 0) {
+    document.getElementById("timePunchSun").innerHTML += n;
+  }
 }
   
 function currentTime(){
