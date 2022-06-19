@@ -20,7 +20,7 @@ function testPunch() {
   if (dayofWeek == 6) {
     document.getElementById("timePunchSat").innerHTML += n;
   }
-  if (new Date().getDay() == 0) {
+  if (dayofWeek == 0) {
     document.getElementById("timePunchSun").innerHTML += n;
   }
 }
